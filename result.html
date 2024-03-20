@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result Sheet</title>
+</head>
+<style>
+
+.box{
+background-color:yellow;
+border-radius:10px;
+min-height:200px;
+width:800px;
+}
+
+.resultBox{
+margin-bottom:30px;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-row-gap:20px;
+font-size:20px;
+text-align:center;
+}
+
+.resultBox span{
+font-weight:600;
+}
+
+</style>
+<body>
+<div class="box" id="questionScreen" style="display: none;">
+</div>
+
+<div class="box" id="resultScreen">
+<div class="title">
+Result Sheet
+</div>
+</br></br>
+<div class="resultBox">
+<label>Questions : </label>
+<span id="totalQuestion">10</span>
+<label>Attempt : </label>
+<span id="attemptQuestion">1</span>
+<label>Correct : </label>
+<span id="correctAnswers">1</span>
+<label>wrong : </label>
+<span id="wrongAnswers">1</span>
+
+</div>
+</div>
